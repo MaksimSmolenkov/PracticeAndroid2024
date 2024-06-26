@@ -75,28 +75,22 @@ fun HeroItem(hero: Hero, onClick: () -> Unit) {
         modifier = Modifier
             .padding(8.dp)
             .clickable { onClick() }
-            .fillMaxWidth()
-            .height(600.dp) // Высота изображения
+            .height(200.dp)
+            .width(150.dp)
     ) {
         Image(
             painter = rememberImagePainter(data = hero.image),
             contentDescription = hero.name,
-            contentScale = ContentScale.Crop,
-            modifier = Modifier.fillMaxSize()
+            modifier = Modifier
+                .fillMaxSize()
         )
         Box(
             modifier = Modifier
-                .align(Alignment.BottomCenter)
-                .background(Color.Black.copy(alpha = 0.7f))
-                .fillMaxWidth()
-                .padding(16.dp)
-        ) {
-            Text(
-                text = hero.name,
-                color = Color.White,
-                style = MaterialTheme.typography.h4
-            )
-        }
+                .fillMaxSize()
+                .background(Color.Black.copy(alpha = 0.5f))
+                .shadow(1.dp)
+        )
+        Text(text = hero.name, style = MaterialTheme.typography.h6)
     }
 }
 
