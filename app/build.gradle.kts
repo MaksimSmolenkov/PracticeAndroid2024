@@ -61,6 +61,12 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.coil.compose)
+    implementation("androidx.compose.ui:ui:1.6.8")
+
+    implementation("androidx.compose.foundation:foundation:1.6.8")
+
+    implementation("com.google.accompanist:accompanist-pager:0.28.0")
+    implementation("com.google.accompanist:accompanist-pager-indicators:0.28.0")
     implementation(libs.androidx.material)
     implementation(libs.androidx.core)
     implementation(libs.coil.compose.v222)
@@ -68,9 +74,6 @@ dependencies {
     implementation(libs.design.navigation)
     implementation(libs.androidx.navigation.compose)
     testImplementation(libs.junit)
-   // implementation("androidx.core:core:1.13.1") {
-    //    exclude(group = "com.android.support", module = "support-compat")
-//}
 
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

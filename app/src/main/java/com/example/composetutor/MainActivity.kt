@@ -22,14 +22,8 @@ import coil.compose.rememberImagePainter
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 
-import androidx.compose.ui.layout.ContentScale
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import coil.compose.rememberImagePainter
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import coil.compose.rememberAsyncImagePainter
-//import androidx.compose.material3.MyAppTheme
+
 
 import com.example.composetutor.ui.theme.MyAppTheme
 
